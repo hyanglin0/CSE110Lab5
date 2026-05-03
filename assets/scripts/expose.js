@@ -27,8 +27,8 @@ function init() {
   setVolume();
   
   function selectHorn() {
-    audioObject.src = "/assets/audio/" + hornSelect.value + ".mp3";
-    hornImg.src = "/assets/images/" + hornSelect.value + ".svg";
+    audioObject.src = "./assets/audio/" + hornSelect.value + ".mp3";
+    hornImg.src = "./assets/images/" + hornSelect.value + ".svg";
   }
 
   function setVolume() {
@@ -42,7 +42,7 @@ function init() {
     } else {
       level = 3;
     }
-    volumeImg.src = "/assets/icons/volume-level-" + level + ".svg";
+    volumeImg.src = "./assets/icons/volume-level-" + level + ".svg";
     audioObject.volume = volumeSlider.valueAsNumber / 100;
   }
 }
