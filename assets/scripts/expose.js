@@ -22,7 +22,7 @@ function init() {
     if (hornSelect.value == "party-horn") {
       jsConfetti.addConfetti();
     }
-  })
+  });
 
   setVolume();
   
